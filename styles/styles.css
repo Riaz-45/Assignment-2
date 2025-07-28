@@ -88,22 +88,27 @@ ul a{
 }
 
 .banner-title-container{
-    height: 300px;
     width: 570px;
+    line-height: 1.2;
 }
 
 .banner-title{
+    margin-bottom: 25px;
+    gap: 25px;
+}
+
+.banner-title h1{
     width: 570px;
+    height: 89px;
     font-weight: bold;
-    font-size: 50px;
-    /* gap: 20px; */
+    font-size: 4.06rem;
 }
 
 .banner-description{
     width: 570px;
-    height: 108px;
+    font-size: 1.5rem;
     color: rgba(0, 0, 0, 0.5);
-    margin-top: 10px;
+    padding-top: 50px;
 }
 
 /* our plants */
@@ -119,9 +124,14 @@ ul a{
 }
 
 .plant-sub-title{
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.1rem;
     width: 800px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 16px;
 }
 
 .plant-cart{
@@ -138,3 +148,23 @@ ul a{
 
 
 /* responsive for mobile device using media query */
+
+@media screen and (max-width: 400px) {
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+
+    .plant-cart{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-list-items{
+        display: none;
+    }
+
+    .body{
+        width: 100%;
+        margin: 0 10px;
+    }
+}
