@@ -115,12 +115,17 @@ ul a{
 
 .our-plant{
     text-align: center;
+    align-items: center;
     margin-top: 120px;
+    margin-bottom: 210px;
 }
 
 .plant-title{
     font-weight: bold;
     font-size: 3.1rem;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .plant-sub-title{
@@ -128,10 +133,10 @@ ul a{
     font-size: 1.1rem;
     width: 800px;
     text-align: center;
-    align-items: center;
+    /* align-items: center; */
     margin: 0 auto;
     margin-bottom: 50px;
-    margin-top: 16px;
+    /* margin-top: 16px; */
 }
 
 .plant-cart{
@@ -139,8 +144,61 @@ ul a{
     grid-template-columns: repeat(4, 1fr);
 }
 
-.plant-cart-item{
+.plant-cart-items{
     text-align: center;
+}
+
+.plant-cart button{
+    background-color: #E95A08;
+    padding: 18px 50px;
+    color: #FFFFFF;
+    width: 270px;
+    height: 50px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flower-name{
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 26px;
+    margin-bottom: 15px;
+}
+
+.flower-price{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+/* flower and plants lover */
+
+.plant-lover-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.plant-lover-image{
+    width: 540px;
+    height: 597px;
+}
+
+.plant-lover-content{
+    margin-bottom: 20px;
+}
+
+.plant-lover-title{
+    font-weight: bold;
+    font-size: 3.01rem;
+}
+
+.plant-lover-description li{
+    margin-bottom: 20px;
+    font-size: 1.3rem;
 }
 
 
@@ -154,6 +212,11 @@ ul a{
         flex-direction: column-reverse;
     }
 
+    .plant-lover-container{
+        flex-direction: column;
+        gap: 18px;
+    }
+
     .plant-cart{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -165,6 +228,41 @@ ul a{
 
     .body{
         width: 100%;
-        margin: 0 10px;
+        margin: 0 20px;
+    }
+
+    .our-plant{
+        margin-bottom: 41.5px;
+    }
+
+    .plant-title{
+        text-align: center;
+        /* align-items: center; */
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .plant-sub-title{
+        text-align: center;
+        margin-bottom: 28px;
+        width: 10%0%;
+    }
+
+    .plant-cart-items{
+        margin-right: 20px;
+    }
+
+    .plant-lover-content{
+        text-align: left;
+    }
+
+    .plant-lover-title{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .plant-lover-description{
+        font-size: 14px;
+        width: 100%;
     }
 }
