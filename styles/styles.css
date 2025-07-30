@@ -20,17 +20,14 @@
 header{
     max-width: 1140px;
     margin: 0 auto;
-    /* background-color: #f5f7ff; */
 }
 main{
     max-width: 1140px;
     margin: 0 auto;
-    /* background-color: #f5f7ff; */
 }
 footer{
     max-width: 1440px;
     margin: 0 auto;
-    /* background-color: #f5f7ff; */
 }
 
 .descriptions{
@@ -367,7 +364,7 @@ ul a{
     text-align: left;
 
 }
-.list-container{
+.list-container ul a{
     color: rgba(107, 114, 128, 1);
 }
 
@@ -416,8 +413,17 @@ ul a{
         display: none;
     }
 
-    .body{
+    main{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 16px;
+    }
+    footer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         margin: 0 16px;
     }
@@ -490,6 +496,10 @@ ul a{
         flex-direction: column;
         align-items: center;
         margin-bottom: 50px;
+        width: 100%;
+    }
+    .ab-image-container div img{
+        max-width: 100%;
     }
 
     div img{
@@ -498,5 +508,29 @@ ul a{
 
     .join{
         margin-top: 300px;
+        text-align: center;
+    }
+    .join-container{
+        /* text-align: center; */
+    }
+    .join-title h3{
+        text-align: center;
+        font-size: 22px;
+        width: 235px;
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .image-container > div{
+        display: flex;
+        flex-direction: column;
+        height: 360pxpx;
+    }
+    .list-container ul{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 }
