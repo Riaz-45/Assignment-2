@@ -17,10 +17,20 @@
 
 /* shared styles */
 
-.body{
+header{
     max-width: 1140px;
     margin: 0 auto;
-    background-color: #f5f7ff;
+    /* background-color: #f5f7ff; */
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+    /* background-color: #f5f7ff; */
+}
+footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    /* background-color: #f5f7ff; */
 }
 
 .descriptions{
@@ -149,7 +159,7 @@ ul a{
 
 .plant-sub-title{
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     width: 800px;
     text-align: top center;
     margin: 16px auto;
@@ -257,10 +267,13 @@ ul a{
     display: flex;
     height: 423px;
     gap: 28px;
+
+    margin-bottom: 120px;
 }
 
 .ab-image-container img{
     border-radius: 22px;
+    /* background: rgba(0, 0, 0, 0.4); */
 }
 .ab-image-container{
     display: grid;
@@ -273,7 +286,99 @@ ul a{
 }
 
 
+/* join branch section */
 
+.join{
+    /* text-align: center; */
+    background-image: url('../images/news-letter-bg.png');
+    width: 100%;
+    height: 533px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-bottom: 50px;
+}
+
+.join-container div{
+    text-align: center;
+    
+    
+}
+
+.join-title h3{
+    font-weight: bold;
+    font-size: 3.125rem;
+    color: #FFFFFF;
+    margin-top: 199px;
+}
+
+.form-container input[type="email"]{
+    background-color: #FFFFFF;
+    width: 644px;
+    height: 50px;
+    border: none;
+}
+
+.form-container input[type="button"]{
+    background-color: #E95A08;
+    padding: 15px 50px;
+    color: #FFFFFF;
+    width: 186px;
+    height: 55px;
+    font-weight: 400;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* footer section style */
+
+.footer-section{
+    width: 1120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    /* width: 1120px; */
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.image-container{
+    width: 300px;
+    font-size: 1.3rem;
+    margin-left: 120px;
+    text-align: left;
+}
+
+.image-description div{
+    margin-bottom: 10px;
+}
+
+.list-container ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 32px;
+    row-gap: 40px;
+    text-align: left;
+
+}
+.list-container{
+    color: rgba(107, 114, 128, 1);
+}
+
+.icon-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.icon-container img{
+    width: 36px;
+    height: 36px;
+}
 
 
 /* responsive for mobile device using media query */
@@ -297,7 +402,7 @@ ul a{
         padding: 0 auto;
     }
 
-    .plant-lover-container{
+    .plant-lover-container, .footer-section{
         flex-direction: column;
         gap: 18px;
     }
@@ -368,6 +473,10 @@ ul a{
         /* width: 100%; */
     }
 
+    .deals{
+        margin-bottom: 51.5px;
+    }
+
     .logo-badge img{
         display: none;
     }
@@ -375,5 +484,19 @@ ul a{
     .deals-description{
         margin: 0 auto;
         width: 100%;
+    }
+
+    .plant-photo{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    div img{
+        width: 361px;
+    }
+
+    .join{
+        margin-top: 300px;
     }
 }
