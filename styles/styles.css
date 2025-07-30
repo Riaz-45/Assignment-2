@@ -435,6 +435,7 @@ footer{
 }
 .list-container ul a{
     color: rgba(107, 114, 128, 1);
+    text-decoration: none;
 }
 
 .icon-container{
